@@ -1,0 +1,396 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0px 25px 0px;
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Shrikhand', cursive;
+}
+
+.headershearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  background-color: #e6e6e6;
+  margin: 0;
+  -webkit-box-shadow: 0px 3px 3px silver inset;
+          box-shadow: 0px 3px 3px silver inset;
+}
+
+.headershearchinput {
+  font-size: 20px;
+  border: none;
+  background-color: #e6e6e6;
+  padding-left: 10px;
+  outline: none;
+}
+
+.headerblock {
+  background-color: #f8f8f8;
+  padding-bottom: 40px;
+}
+
+.headertextdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.headertextdiv .reservez {
+  font-size: 1.5em;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.headertextdiv .decouvrez {
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.headerbutton {
+  text-decoration: none;
+}
+
+.headerbtn {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  font-size: 1.2em;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #f2f2f2;
+  margin-top: 15px;
+}
+
+.headerbtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+
+.nav .choose, .nav .tasting, .nav .compose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  width: auto;
+  margin: 0 10px 20px 10px;
+  -webkit-box-shadow: 3px 3px 3px #f3eaea;
+          box-shadow: 3px 3px 3px #f3eaea;
+  text-decoration: none;
+  color: black;
+  height: 75px;
+  position: relative;
+  text-align: center;
+}
+
+.nav .choose:hover, .nav .tasting:hover, .nav .compose:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.nav .choose:hover, .nav .tasting:hover, .nav .compose:hover {
+  color: #9356DC;
+}
+
+.nav .choosetext, .nav .tastingtext, .nav .composetext {
+  text-align: right;
+}
+
+.nav .iconmobile, .nav .iconbars, .nav .iconstore {
+  padding-right: 15px;
+  position: absolute;
+  top: 25px;
+  font-size: 1.5em;
+}
+
+.nav .iconmobile {
+  color: #838383;
+  left: 45px;
+}
+
+.nav .iconbars {
+  color: #838383;
+  left: 40px;
+}
+
+.nav .iconstore {
+  color: #9356DC;
+  left: 35px;
+}
+
+.nav .number1, .nav .number2, .nav .number3 {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  left: -15px;
+  font-size: 1.5em;
+}
+
+.navtitle, .sectiontitle {
+  padding-left: 15px;
+}
+
+.img {
+  margin-top: 5px;
+  width: 350px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+h3, .sectionarticleppalette, .sectionarticlepnote, .sectionarticlepfrançaise, .sectionarticlepdelice {
+  margin: 10px 0 5px 15px;
+}
+
+.palette {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.palette:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.palette .sectionarticlefigpalette {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px #f3eaea;
+          box-shadow: 3px 3px 3px #f3eaea;
+  width: 350px;
+  height: 255px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.palette .heart {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  font-size: 1.5em;
+}
+
+.palette .new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  color: #258b69;
+  padding: 6px 13px 6px 13px;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.note {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.note:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.note .sectionarticlefignote {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px #f3eaea;
+          box-shadow: 3px 3px 3px #f3eaea;
+  width: 350px;
+  height: 255px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.note .heart {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  font-size: 1.5em;
+}
+
+.note .new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  color: #258b69;
+  padding: 6px 13px 6px 13px;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.française {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.française:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.française .sectionarticlefigfrançaise {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px #f3eaea;
+          box-shadow: 3px 3px 3px #f3eaea;
+  width: 350px;
+  height: 255px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.française .heart {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  font-size: 1.5em;
+}
+
+.delice {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delice:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.delice .sectionarticlefigdelice {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px #f3eaea;
+          box-shadow: 3px 3px 3px #f3eaea;
+  width: 350px;
+  height: 255px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.delice .heart {
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #363535;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 1.5em;
+  margin: 0px 0 25px 25px;
+  padding-top: 25px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer .footertext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5em;
+}
+
+.footer .footerproposition, .footer .footerpartenaire, .footer .footermention, .footer .footercontact {
+  text-decoration: none;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.footer .utensils, .footer .helping {
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
