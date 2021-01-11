@@ -1,0 +1,81 @@
+@mixin nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $quaternary;
+    border-radius: 20px;
+    width: auto;
+    margin:0 10px 20px 10px;
+    box-shadow: 3px 3px 3px #f3eaea;
+    text-decoration: none;
+    color: black;
+    height: 75px;
+
+}
+
+@mixin btn {
+    display: block;
+    margin : auto;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    font-size: 1.2em;
+    background-image: linear-gradient(to bottom right, $secondary, $primary);
+    color: #f2f2f2;
+    margin-top: 15px ;
+  
+}
+
+@mixin new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #99E2D0;
+    color: rgb(37, 139, 105);
+    padding: 6px 13px 6px 13px;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+@mixin icon {
+    padding-right: 15px;
+    position: absolute;
+    top: 25px;
+    font-size: 1.5em;
+}
+
+@mixin card{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin cardtext {
+    position: relative; 
+    background-color:white;
+    box-shadow: 3px 3px 3px #f3eaea;
+    width: 350px;
+    height: 255px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+@mixin heart {
+    position: absolute;
+    right: 15px;
+    bottom: 35px;
+    font-size: 1.5em;
+}
+
+@mixin margincardtext {
+    margin: 10px 0 5px 15px;
+}
+
+@mixin hover {
+    &:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    }
+}
