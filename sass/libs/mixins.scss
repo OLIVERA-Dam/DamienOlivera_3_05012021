@@ -1,72 +1,44 @@
-@mixin nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $quaternary;
-    border-radius: 20px;
-    width: auto;
-    margin:0 10px 20px 10px;
-    box-shadow: 3px 3px 3px #f3eaea;
-    text-decoration: none;
-    color: black;
-    height: 75px;
-
-}
-
 @mixin btn {
-    display: block;
-    margin : auto;
-    cursor: pointer;
-    outline: none;
+    text-align: center;
+    padding: 20px 0;
+    width: 250px;
     border-radius: 50px;
-    border: none;
-    padding: 20px;
+    cursor: pointer;
     font-size: 1.2em;
-    background-image: linear-gradient(to bottom right, $secondary, $primary);
-    color: #f2f2f2;
-    margin-top: 15px ;
-  
-}
+    text-decoration: none;
+}    
+
+@mixin hoverbtn {
+    &:hover{ 
+    transform: scale(1.05);
+    filter: brightness(130%);
+    box-shadow: 2px 2px 2px 3px #858282; 
+    }
+} 
 
 @mixin new {
     position: absolute;
-    top: 20px;
-    right: 20px;
     background-color: #99E2D0;
     color: rgb(37, 139, 105);
     padding: 6px 13px 6px 13px;
     border-radius: 3px;
     font-weight: bolder;
-}
-
-@mixin icon {
-    padding-right: 15px;
-    position: absolute;
-    top: 25px;
-    font-size: 1.5em;
+    height: 20px;
+    width: 65px;
+    top: 0;
+    right: 20px;
 }
 
 @mixin card{
-    text-decoration: none;
-    color: black;
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 
-@mixin cardtext {
-    position: relative; 
-    background-color:white;
-    box-shadow: 3px 3px 3px #f3eaea;
-    width: 350px;
-    height: 255px;
-    border-radius: 25px 25px 25px 25px;
-}
-
-@mixin heart {
+@mixin heartmenu {
     position: absolute;
-    right: 15px;
-    bottom: 35px;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 @mixin margincardtext {
@@ -75,7 +47,55 @@
 
 @mixin hover {
     &:hover{
-    transform: scale(1.05);
-    transition-duration: 0.2s;
+    transform: scale(1.03);
     }
+}
+
+@mixin ohmyfood {
+    display: flex; 
+    justify-content: center;
+    padding: 15px 0px ;
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5em;
+}
+
+@mixin arrow {
+    position: absolute;
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: lighter;
+    top: 20px;
+    left: 35px;
+    color: black;
+    &:hover{
+        transform: scale(1.2);  
+    }
+}
+
+@mixin img {
+    width: 100%;
+    height:300px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+@mixin btncard {
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;  
+}
+
+@mixin plats {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px #e4e4e4;
+    background-color: rgb(255, 255, 255);
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+    color: #242424;
+    opacity: 0;
+    cursor: pointer;
 }
