@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -9,120 +10,137 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="sass/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-		<title>Ohmyfood</title>
+        <link rel="stylesheet" href="page2"/>
+        <link rel="stylesheet" href="page3"/>
+        <link rel="stylesheet" href="page4"/>
+        <link rel="stylesheet" href="page5"/>
+        <link rel="stylesheet" href="mentionslegales.html"/>
+        <title>Ohmyfood</title>
     </head>
-    <body>
-        <header>
-            <h1 class="title">Ohmyfood</h1>
-            <form class="headershearch" action="traitement.php" method="post">      	
-				<span class="headershearchicon">
-          			<i class="fas fa-map-marker-alt headershearchiconicon"></i>
+    <body class="body__principale">
+
+        
+            <div class="loader">
+                <h1 class="loader__text">ohmyfood<br/>Chargement...</h1>
+                <div class="loader__block loader__circles"></div>       
+            </div>
+        
+
+        <header class="main">
+            <h1 class="main__title">Ohmyfood</h1>
+            <form class="main__shearch" action="traitement.php" method="post">      	
+				<span class="main__icon">
+          			<i class="fas fa-map-marker-alt main__iconicon"></i>
         		</span>
-       			<input class="headershearchinput" type="search" placeholder="Paris, Belleville">
+       			<input class="main__input" type="search" placeholder="Paris, Belleville">
             </form>
-            <div class="headerblock">
-                <div class="headertextdiv">
-                    <p class="headertext reservez">Réservez le menu qui vous convient</p>
-                    <p class="headertext decouvrez">Découvrez des restaurants d'exception, Séléctionnés par nos soins.</p>
+            <div class="main__block">
+                <div class="main__text">
+                    <p class="main__para reserve">Réservez le menu qui vous convient</p>
+                    <p class="main__para discover">Découvrez des restaurants d'exception, Séléctionnés par nos soins.</p>
                 </div>
-                <a class="headerbutton" href="#">
-                    <button class="headerbtn">
-                        <span class="btn">Explore nos restaurants</span>
-                    </button>
+                <div class="button">
+                    <a class="btn btn__menu" href="#">Explore nos restaurants</a>
+                </div>
+            </div>
+
+            <nav class="navigation">
+            <h2 class="navigation__title">Fonctionnement</h2>
+            <div class="navigation__block">
+                <a class="navigation__button" href="#">
+                    <p class="navigation__number">1</p>
+                    <i class="fas fa-mobile-alt navigation__icon"></i>
+                    <p class="navigation__text">Choisissez un restaurant</p>
+                </a>
+                <a class="navigation__button" href="#">
+                    <p class="navigation__number">2</p>
+                    <i class="fas fa-bars navigation__icon"></i>
+                    <p class="navigation__text">Composez votre menu</p>
+                </a>
+                <a class="navigation__button" href="#">
+                    <p class="navigation__number">3</p>
+                    <i class="fas fa-store navigation__icon"></i>
+                    <p class="navigation__text">Dégustez au restaurant</p>
                 </a>
             </div>
-            <h2 class="navtitle">Fonctionnement</h2>
-            <nav class="nav">
-                <a class="choose" href="#">
-                    <p class="number1">1</p>
-                    <i class="fas fa-mobile-alt iconmobile"></i>
-                    <p class="choosetext">Choisissez un restaurant</p>
-                </a>
-                <a class="compose" href="#">
-                    <p class="number2">2</p>
-                    <i class="fas fa-bars iconbars"></i>
-                    <p class="composetext">Composez votre menu</p>
-                </a>
-                <a class="tasting" href="#">
-                    <p class="number3">3</p>
-                    <i class="fas fa-store iconstore"></i>
-                    <p class="tastingtext">Dégustez au restaurant</p>
-                </a>
             </nav>
         </header>
-        <section>
-            <h2 class="sectiontitle">Restaurants</h2>
-            <article>
-                <a class="palette" href="#">
-                    <figure class="sectionarticlefigpalette" >
-                        <img class="img" src="maquette/images/restaurants/jay-wennington.jpg" alt="Plat de restauration">
-                        <figcaption class="sectionarticlecappalette">
-                            <h3>La palette du goût</h3>
-                        </figcaption>
-                        <span class="new">Nouveau</span>
-                        <p class="sectionarticleppalette">Ménilmontant</p>
-                        <div class="sectionarticledivpalette">
-                            <i class="far fa-heart heart"></i>
-                        </div>
-                    </figure>
-                </a>
-            </article>
 
-            <article>
-                <a class="note" href="#">
-                    <figure class="sectionarticlefignote" >
-                        <img class="img" src="maquette/images/restaurants/stil.jpg" alt="Plat de restauration">
-                        <figcaption class="sectionarticlecapnote">
-                            <h3>La note enchantée</h3>
-                        </figcaption>
-                        <span class="new">Nouveau</span>
-                        <p class="sectionarticlepnote">Charonne</p>
-                        <div class="sectionarticledivnote">
-                            <i class="far fa-heart heart"></i>
+        <section class="section">
+            <div class="section__section">
+                <h2 class="section__title">Restaurants</h2>
+                <div class="section__container">
+                    <article class="section__article">
+                        <div class="section__block"> 
+                            <a class="section__card" href="page2.html">
+                                <img class="section__img img" src="maquette/images/restaurants/jay-wennington.jpg" alt="Plat de restauration">
+                                <h3>La palette du goût</h3>
+                                <p class="section__paragra">Ménilmontant</p>
+                                <p class="section__new">Nouveau</p>
+                            </a>    
+                            <div class="sectionarticledivpalette">
+                                <i class="far fa-heart section__heart"></i>
+                                <i class="fas fa-heart section__fullheart"></i>
+                            </div>
                         </div>
-                    </figure>
-                </a>
-            </article>
+                    </article>
 
-            <article>
-                <a class="française" href="#">
-                    <figure class="sectionarticlefigfrançaise" >
-                        <img class="img" src="maquette/images/restaurants/toa-heftiba.jpg" alt="Plat de restauration">
-                        <figcaption class="sectionarticlecapfrançaise">
-                            <h3>À la française</h3>
-                        </figcaption>
-                        <p class="sectionarticlepfrançaise">Cité Rouge</p>
-                        <div class="sectionarticledivfrançaise">
-                            <i class="far fa-heart heart"></i>
+                    <article class="section__article">
+                        <div class="section__block">
+                            <a class="section__card" href="page3.html">
+                                <img class="section__img img" src="maquette/images/restaurants/stil.jpg" alt="Plat de restauration">
+                                <h3>La note enchantée</h3>
+                                <p class="section__paragra">Charonne</p>
+                                <p class="section__new">Nouveau</p>
+                            </a>    
+                            <div class="sectionarticledivnote">
+                                <i class="far fa-heart section__heart"></i>
+                                <i class="fas fa-heart section__fullheart"></i>
+                            </div>
+                        </div> 
+                    </article>
+
+                    <article class="section__article">
+                        <div class="section__block">
+                            <a class="section__card" href="page4.html">
+                                <img class="section__img img" src="maquette/images/restaurants/toa-heftiba.jpg" alt="Plat de restauration">
+                                <h3>À la française</h3>
+                                <p class="section__paragra">Cité Rouge</p>
+                            </a>
+                            <div class="sectionarticledivfrançaise">
+                                <i class="far fa-heart section__heart"></i>
+                                <i class="fas fa-heart section__fullheart"></i>
+                            </div>
                         </div>
-                    </figure>
-                </a>
-            </article>
+                    </article>
 
-            <article>
-                <a class="delice" href="#">
-                    <figure class="sectionarticlefigdelice" >
-                        <img class="img" src="maquette/images/restaurants/louis-hansel.jpg" alt="Plat de restauration">
-                        <figcaption class="sectionarticlecapdelice">
-                            <h3>Le délice des sens</h3>
-                        </figcaption>
-                        <p class="sectionarticlepdelice">Folie-Méricourt</p>
-                        <div class="sectionarticledivdelice">
-                            <i class="far fa-heart heart"></i>
+                    <article class="section__article">
+                        <div class="section__block">
+                            <a class="section__card" href="page5.html">
+                                <img class="section__img img" src="maquette/images/restaurants/louis-hansel.jpg" alt="Plat de restauration">
+                                <h3>Le délice des sens</h3>
+                                <P class="section__paragra">Folie-Méricourt</P>
+                            </a>
+                            <div class="sectionarticledivdelice">
+                                <i class="far fa-heart section__heart"></i>
+                                <i class="fas fa-heart section__fullheart"></i>
+                            </div>
                         </div>
-                    </figure>
-                </a>
-            </article>
-
-         </section>
+                    </article>
+                </div>
+            </div>   
+        </section>
 
         <footer class="footer">
-            <h3>ohmyfood</h3>
-            <div class="footertext">
-                <a class="footerproposition" href="#"><i class="fas fa-utensils utensils"></i>Proposer un restaurant</a>
-                <a class="footerpartenaire" href="#"><i class="fas fa-hands-helping helping"></i>Devenir partenaire</a>
-                <a class="footermention" href="#">Mentions légales</a>
-                <a class="footercontact" href="#">Contact</a>
+            <div class="footer__container">
+                <h3>ohmyfood</h3>
+                <div class="footer__text">
+                    <a class="footer__proposition" href="#"><i class="fas fa-utensils footer__utensils"></i>Proposer un restaurant</a>
+                    <a class="footer__partenaire" href="#"><i class="fas fa-hands-helpingfooter__ helping"></i>Devenir partenaire</a>
+                    <a class="footer__mention" href="mentionslegales.html">Mentions légales</a>
+                    <a class="footer__contact" href="mailto:ohmyfood@hotmail.com">Contact</a>
+                </div>
             </div>
         </footer>
     </body>
+</html>
