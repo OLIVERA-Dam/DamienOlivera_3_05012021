@@ -155,8 +155,8 @@ body, html {
   border-radius: 20px;
   width: auto;
   margin: 0 20px 20px 30px;
-  -webkit-box-shadow: 3px 3px 3px #f3eaea;
-          box-shadow: 3px 3px 3px #f3eaea;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6dede;
+          box-shadow: 3px 3px 3px 3px #e6dede;
   text-decoration: none;
   color: black;
   height: 75px;
@@ -177,6 +177,8 @@ body, html {
 .navigation__button:hover {
   color: #9356DC;
   background-color: #f3e2e2;
+  -webkit-box-shadow: 3px 3px 3px 3px #cac9c9;
+          box-shadow: 3px 3px 3px 3px #cac9c9;
 }
 
 .navigation__button:hover .navigation__icon {
@@ -511,7 +513,6 @@ h3, .section__paragra {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
 }
 
 .card__title::after {
@@ -533,8 +534,11 @@ h3, .section__paragra {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #fff;
-  margin: 10px;
+  margin: 15px;
   border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6dede;
+          box-shadow: 3px 3px 3px 3px #e6dede;
+  cursor: pointer;
 }
 
 .card__subtitle {
@@ -577,7 +581,7 @@ h3, .section__paragra {
   background-color: #99E2D0;
   width: 73px;
   height: 73px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 8px 8px 0;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
 }
@@ -971,7 +975,7 @@ h3, .section__paragra {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 1075px) {
+@media (min-width: 1200px) {
   .card__composition {
     min-width: 450px;
   }
@@ -1004,7 +1008,7 @@ h3, .section__paragra {
             justify-content: center;
   }
   .section__block {
-    max-width: 670px;
+    min-width: 670px;
     height: 385px;
   }
   .section__img {
@@ -1028,6 +1032,23 @@ h3, .section__paragra {
 @media (min-width: 500px) {
   .loader__text {
     padding-top: 500px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1450px) {
+  .menu__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    max-width: 800px;
   }
 }
 /*# sourceMappingURL=style.css.map */

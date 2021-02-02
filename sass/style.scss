@@ -97,7 +97,7 @@ body, html{
     border-radius: 20px;
     width: auto;
     margin:0 20px 20px 30px;
-    box-shadow: 3px 3px 3px #f3eaea;
+    box-shadow: 3px 3px 3px 3px #e6dede;
     text-decoration: none;
     color: black;
     height: 75px;
@@ -108,6 +108,7 @@ body, html{
     &:hover{
       color: $primary;
       background-color:rgb(243, 226, 226);
+      box-shadow: 3px 3px 3px 3px #cac9c9;
       .navigation__icon{
       color:$primary ;
       }
@@ -369,7 +370,6 @@ h3,.section__paragra{
   margin: 0;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 
   &__title::after{
   content:'';
@@ -386,8 +386,10 @@ h3,.section__paragra{
     display: flex;
     justify-content: flex-end;
     background-color: #fff;
-    margin: 10px;
+    margin: 15px;
     border-radius: 8px;
+    box-shadow: 3px 3px 3px 3px #e6dede;
+    cursor: pointer;
   }
 }
 
@@ -424,7 +426,7 @@ h3,.section__paragra{
     background-color: #99E2D0;
     width: 73px;
     height: 73px;
-    border-radius: 0 10px 10px 0; 
+    border-radius: 0 8px 8px 0; 
     transition-duration: .5s;
   }  
 
@@ -664,7 +666,7 @@ animation-fill-mode: forwards;}
     margin: 20px;
   }
                                 /* MEDIA QUERIES */
-@media (min-width: 1075px){
+@media (min-width: 1200px){
   .card__composition{
     min-width: 450px;
   }
@@ -690,8 +692,9 @@ animation-fill-mode: forwards;}
   }
 
   .section__block{
-    max-width: 670px;
+    min-width: 670px;
     height: 385px;
+    
   }
 
   .section__img{
@@ -714,5 +717,15 @@ animation-fill-mode: forwards;}
     .loader__text{
     padding-top: 500px;
   }
+}
+
+@media (min-width: 500px) and (max-width:1450px){
+  .menu__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+    }
 }
 
