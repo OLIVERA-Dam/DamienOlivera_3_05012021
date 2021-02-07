@@ -205,6 +205,8 @@ h3,.section__paragra{
   @include heartmenu;
   right: 35px;
   bottom: 30px;
+  &:hover{
+  }
 }
 
 .section__fullheart{
@@ -214,14 +216,25 @@ h3,.section__paragra{
   font-size: 1.8em;
   color:transparent;
   cursor: pointer;
-    
+
     &:hover{     
     background: -webkit-linear-gradient(to bottom right , $secondary, $primary); 
     background: linear-gradient(to bottom right , $secondary, $primary); 
     -webkit-background-clip: text; 
     -moz-background-clip: text;
     -webkit-text-fill-color:transparent;
+    animation: fullheart .3s;
     } 
+  }
+
+  @keyframes fullheart{
+    0%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 1;
+    }
   }
 
   .btn__card{
@@ -361,6 +374,7 @@ h3,.section__paragra{
   -moz-background-clip: text;
   -webkit-text-fill-color:transparent;
   opacity: 1;
+  animation: fullheart .3s;
   }
                               /* SECTION CARD */
 .card{
@@ -527,7 +541,7 @@ animation-fill-mode: forwards;}
   }
 }
                               /* LOADER */
-.loader{
+/*.loader{
   position: fixed;
   z-index: -1;
   opacity: 0;

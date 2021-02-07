@@ -319,6 +319,26 @@ h3, .section__paragra {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: fullheart .3s;
+          animation: fullheart .3s;
+}
+
+@-webkit-keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn__card {
@@ -498,6 +518,8 @@ h3, .section__paragra {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
+  -webkit-animation: fullheart .3s;
+          animation: fullheart .3s;
 }
 
 /* SECTION CARD */
@@ -783,7 +805,7 @@ h3, .section__paragra {
 }
 
 /* LOADER */
-.loader {
+/*.loader{
   position: fixed;
   z-index: -1;
   opacity: 0;
@@ -793,13 +815,11 @@ h3, .section__paragra {
   text-align: center;
   height: 2300px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-animation: loader 3s;
-          animation: loader 3s;
+  background-image: linear-gradient(to bottom right, $secondary, $primary);
+  animation: loader 3s;
 }
 
-.loader__text {
+.loader__text{
   margin: 0;
   padding: 0;
   padding-top: 250px;
@@ -807,26 +827,24 @@ h3, .section__paragra {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: lighter;
-  -webkit-animation: slideup ease-out 2s;
-          animation: slideup ease-out 2s;
+  animation: slideup ease-out 2s;
 }
 
-.loader__block {
+.loader__block{
   width: 50px;
   height: 50px;
   display: inline-block;
   position: relative;
 }
 
-.loader__circles {
+.loader__circles{
   border-radius: 50px;
   border: 6px solid transparent;
   border-top-color: #fff;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
-.loader__circles::after {
+.loader__circles::after{
   content: '';
   position: absolute;
   top: 3px;
@@ -835,13 +853,12 @@ h3, .section__paragra {
   right: 3px;
   border-radius: 50px;
   border: 6px solid transparent;
-  border-top-color: #fff;
+  border-top-color:  #fff;
   opacity: 0.8;
-  -webkit-animation: spin 5s linear infinite;
-          animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
-.loader__circles::before {
+.loader__circles::before{
   content: '';
   position: absolute;
   top: 10px;
@@ -850,13 +867,11 @@ h3, .section__paragra {
   right: 10px;
   border-radius: 50px;
   border: 6px solid transparent;
-  border-top-color: #fff;
+  border-top-color:  #fff;
   opacity: 0.6;
-  -webkit-animation: spin 10s linear infinite;
-          animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
 }
-
-/* KEYFRAMES LOADER */
+                              /* KEYFRAMES LOADER */
 @-webkit-keyframes loader {
   0% {
     z-index: 1;
